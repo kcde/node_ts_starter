@@ -1,0 +1,30 @@
+{
+  "name": "node_ts_starter",
+  "version": "1.0.0",
+  "description": "TypeScript project project boilerplate with cold-reloading, and scripts for building, development, and production environments.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon",
+    "start":"npm run build && node build/index.js",
+    "build":"rimraf ./build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcde/node_ts_starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcde/node_ts_starter/issues"
+  },
+  "homepage": "https://github.com/kcde/node_ts_starter#readme",
+  "devDependencies": {
+    "@types/node": "^20.1.2",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
